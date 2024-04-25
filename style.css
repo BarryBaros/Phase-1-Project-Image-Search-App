@@ -120,3 +120,9 @@ form {
   background-color: beige;
   color: maroon;
 }
+
+@media screen and (max-width: 768px) {
+  .images{
+    width: 45%;
+  }
+}
