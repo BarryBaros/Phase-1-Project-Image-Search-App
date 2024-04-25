@@ -4,9 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Image Search App</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="sidebar">
+        <div class="top">
+            <div class="logo">
+<i class="bx bxl-codepen"></i>
+<span>Image App</span>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        <div class="user">
+            <img src="https://cdn.pixabay.com/photo/2023/10/17/03/23/child-8320341_960_720.png" alt="Avatar" class="user-img">
+            <div>
+                <!-- <p class="bold">Tim Baros</p> -->
+            </div>
+        </div>
+        <ul>
+            <li>
+                <a href="#">
+                    <i class="bx bxs-grid-alt"></i>
+                    <span class="nav-item">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-home-alt"></i>
+                    <span class="nav-item">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-info-circle"></i>
+                    <span class="nav-item">About</span>
+                </a>
+                <span class="tooltip">About</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-question-mark"></i>
+                    <span class="nav-item">FAQ</span>
+                </a>
+                <span class="tooltip">FAQ</span>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-log-out"></i>
+                    <span class="nav-item">Logout</span>
+                </a>
+                <span class="tooltip">Visitors</span>
+            </li>
+        </ul>
+    </div>
+    
+
+
+
+
+
     <h1>Image Search</h1>
     <form>
         <input type="text" id="search-input" placeholder="Enter Name of Images">
@@ -30,4 +89,5 @@
     </div>
     <button id="more">More Pictures</button>
 </body>
+<script src="index.js"></script>
 </html>
