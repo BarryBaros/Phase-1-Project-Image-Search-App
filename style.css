@@ -126,3 +126,17 @@ form {
     width: 45%;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .images{
+    width: 100%;
+  }
+
+  form{
+    flex-direction: column;
+  }
+  #search-input{
+    margin-bottom: 20px;
+    width: 85%;
+  }
+}
