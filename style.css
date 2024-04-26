@@ -56,6 +56,29 @@ nav a:hover{
     margin-right: auto;
   }
 
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(245, 245, 220, 0);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px maroon;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+
 
 h1 {
   color: maroon;
