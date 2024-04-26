@@ -7,11 +7,6 @@
   font-family: "Poppins", sans-serif;
 }
 
-.user-img{
-  width: 50px;
-  border-radius: 100%;
-  border: 3px solid maroon;
-}
 
 
 body {
@@ -19,7 +14,48 @@ body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
   margin: 0;
+  min-height: 100vh;
+  /* background-image: url(https://cdn.pixabay.com/photo/2015/07/10/15/13/building-839362_1280.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+nav{
+  background-color: beige;
+  box-shadow: 3px 3px 5px maroon;
+}
+
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li{
+  height: 50px;
+}
+
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: maroon;
+}
+
+nav a:hover{
+  background-color: maroon;
+  color: beige;
+}
+
+  nav li:first-child{
+    margin-right: auto;
+  }
+
 
 h1 {
   color: maroon;
