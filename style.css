@@ -38,7 +38,7 @@ nav li{
   height: 50px;
 }
 
-nav a{
+nav a {
   height: 100%;
   padding: 0 30px;
   text-decoration: none;
@@ -52,9 +52,11 @@ nav a:hover{
   color: beige;
 }
 
+
   nav li:first-child{
     margin-right: auto;
   }
+
 
 .sidebar{
   position: fixed;
@@ -63,7 +65,7 @@ nav a:hover{
   height: 100vh;
   width: 250px;
   z-index: 999;
-  background-color: rgba(245, 245, 220, 0);
+  background-color: beige;
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px maroon;
   display: none;
@@ -77,6 +79,10 @@ nav a:hover{
 }
 .sidebar a{
   width: 100%;
+}
+
+.menu-button{
+  display: none;
 }
 
 
@@ -110,7 +116,7 @@ form {
 
 #search-btn {
   padding: 10px 20px;
-  background-color: maroon;
+  background-color: maroon; 
   color: white;
   border: none;
   font-size: 18px;
@@ -210,6 +216,9 @@ form {
 @media (max-width: 800px){
   .hideOnMobile{
     display: none;
+  }
+  .menu-button{
+    display: block;
   }
 }
 
