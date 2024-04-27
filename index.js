@@ -56,6 +56,10 @@ formEl.addEventListener("submit", (event) => {
 })
 
 
+moreButtonEl.addEventListener("click", () => {
+  searchImages();
+});
+
 
 
 function showSidebar() {
