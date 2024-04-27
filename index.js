@@ -22,7 +22,20 @@ async function searchImages() {
     
     // Create a result variable
     const results = data.results;
-    console.log(results);
+
+    results.map((result) => {
+        const imageWrapper = document.createElement("div")
+        imageWrapper.classList.add("search_results");
+        const image = document.createElement("img")
+        image.src = result.urls.small
+        image.alt = result.alt_description;
+        const imageLink = document.createElement("a")
+        imageLink.href = result.links.innerHTML
+        imageLink.target = "_blank"
+        imageLink.textContent = result
+        console.log(results)        
+    })
+    
     
     if (page > 1) {
         moreButtonEl.style.display = block;
