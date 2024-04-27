@@ -65,7 +65,7 @@ nav a:hover{
     margin-right: auto;
   }
 
-#homeContent{
+section{
   background-color: aquamarine;
   padding: 50px;
   margin: 10px auto;
@@ -74,12 +74,12 @@ nav a:hover{
 }
 #homeContent_1{
   background-color: aquamarine;
-  padding: 0 5px;
-  /* margin: 10px auto; */
-  align-items: center;
+  padding: 50px;
+  margin: 10px auto;
+  align-items: flex-start;
   justify-content: center;
-  width: 250px;
-  height: 100vh;
+  width: 100%;
+  height: 50vh;
 }
 
 
@@ -90,7 +90,7 @@ nav a:hover{
   right: 0;
   height: 100vh;
   width: 250px;
-  /* z-index: 999; */
+  z-index: 999;
   background-color: beige;
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px maroon;
@@ -212,7 +212,6 @@ form {
   display: block;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-    display: none;
 }
 
 #more:hover{
