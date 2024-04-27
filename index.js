@@ -10,15 +10,29 @@ let inputData = "";
 let page = 1;
 
 // Create functions
-function searchImages() {
+async function searchImages() {
     inputData = searchInputEl.value;
     const url = `https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&client_id=${key}`;
     console.log(url)
+    const response = await fetch(url);
+    const data = await response.json();
+    if (page === 1) {
+        searchResultsEl.innerHTML = "";
+    }
+    
+    // Create a result variable
+    const results = data.results;
+    console.log(results);
+    
+    if (page > 1) {
+        moreButtonEl.style.display = block;
+    }
 }
 
 // Add event listener
 formEl.addEventListener("submit", (event) => {
     event.preventDefault();
+    page = 1;
    searchImages()
 })
 
