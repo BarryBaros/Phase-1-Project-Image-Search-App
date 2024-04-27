@@ -6,7 +6,15 @@ const searchInputEl = document.getElementById("search-input");
 const searchResultsEl = document.querySelector(".search_results");
 const moreButtonEl = document.getElementById("more");
 
+let inputData = "";
+let page = 1;
 
+// Create functions
+function searchImages() {
+    inputData = searchInputEl.value;
+    const url = `https://api.unsplash.com/search/photos?page=${page}&query=${inputData}&client_id=${key}`;
+    console.log(url)
+}
 
 // Add event listener
 formEl.addEventListener("submit", (event) => {
