@@ -9,67 +9,135 @@
 </head>
 <body>
    
-        <!-- <ul>
-            <li>
-                <a href="#">
-                    <i class="bx bxs-grid-alt"></i>
-                    <span class="nav-item">Dashboard</span>
-                </a>
-                <span class="tooltip">Dashboard</span>
-            </li> -->
-    
 <nav>
-    <ul class="sidebar">
-        <li onclick=hideSidebar()><a href="#"> 
-            <i class="bx bx-power-off"></i>
+    <!-- <ul class="sidebar">
+        <li onclick="hideSidebar()"><a href="#"> 
+            <i class="bx bx-x"></i>
         </a></li>
-        <li><a href="#">
-            <i class="bx bx-home"></i>Home</a></li>
-        <li><a href="#"><i class="bx bx-info-circle"></i>About</a></li>
-        <li><a href="#"><i class="bx bx-question-mark"></i>FAQ</a></li>
-    </ul>
+        <li><a href="#" onclick="toggle_1()">
+           <i class="bx bx-home" ></i>Home</a>
+          <div id="homeContent_1" class="content">
+                <p>This app allows you to search for images based on keywords. 
+                Enter a keyword in the search bar and click 'Search' to find 
+                images related to your keyword.</p>
+            </div>
+        </li>
+        <li><a href="#" onclick="toggle_2()">
+            <i class="bx bx-info-circle"></i>About</a>
+         <div id="about_1" class="about_1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos esse, ducimus quae, aspernatur incidunt animi ad sunt quod quam aliquam voluptas reiciendis hic voluptatibus iusto sed voluptatem, cumque reprehenderit consequatur.</p>    
+        </div>
+        </li>
+        <li><a href="#" onclick="toggle_3()">
+            <i class="bx bx-question-mark"></i>FAQ</a>
+        <div id="faq_1" class="faq_1" >
+            <p><h3>FAQ (Frequently Asked Questions)</h3>
+<h5>1. How does the image search feature work?</h5>
+
+The image search feature allows you to find images based on keywords. Simply enter a keyword related to the type of image you're looking for in the search bar and click the 'Search' button. The app will then fetch and display images related to your keyword from an external image database.
+<h5>2. Can I search for multiple keywords at once?</h5>
+
+Currently, the app supports searching for images based on a single keyword at a time. However, you can refine your search by entering more specific keywords.
+<h5>3. Are the images displayed in the app free to use?</h5>
+
+The images displayed in the app are sourced from external image databases such as Unsplash, which provide high-quality images that are often free to use for personal and commercial purposes. However, it's recommended to check the usage rights and licensing information for each image before using it for your specific purpose.
+<h5>4. How frequently is the image database updated?</h5>
+
+The image database is updated regularly by the external service provider. However, the frequency of updates may vary, and new images may be added to the database on a continuous basis.
+<h5>5. Can I save or download the images I find using the app?</h5>
+
+Yes, you can save or download the images displayed in the app to your device. Simply click on the image to view it in full size, and then use the download option provided by your browser or the external image hosting service.
+<h5>6. Is there a limit to the number of searches I can perform?</h5>
+
+There is no limit to the number of searches you can perform using the app. You can search for images as many times as you like, using different keywords each time.
+<h5>7. Can I provide feedback or report issues with the app?</h5>
+
+Yes, we welcome feedback from users to help improve the app. If you encounter any issues or have suggestions for new features, please feel free to contact us through the provided contact form or email address. Your feedback is valuable to us!</p>
+        </div>
+        </li>
+    </ul> -->
+
+   
     <ul>
-        <li><a href="#">Coding2go</a></li>
+        <li>
+            <a href="#">TimBaros</a>
+        </li>
         <li class="hideOnMobile">
-            <a href="#"><i class="bx bx-home"></i>
-                Home</a></li>
-        <li class="hideOnMobile"><a href="#"> About</a></li>
-        <li class="hideOnMobile"><a href="#">FAQ</a></li>
-        <li class="menu-button" onclick=showSidebar()><a href="#"> 
+            <a href="#" onclick="toggle()" id="home">Home</a>
+            <div id="homeContent">
+                <p>This app allows you to search for images based on keywords. 
+                Enter a keyword in the search bar and click 'Search' to find 
+                images related to your keyword.</p>
+            </div>
+         </li>
+
+
+        <li class="hideOnMobile"><a href="#" onclick="toggle_4()">
+             About</a>
+        <div id="about">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos esse, ducimus quae, aspernatur incidunt animi ad sunt quod quam aliquam voluptas reiciendis hic voluptatibus iusto sed voluptatem, cumque reprehenderit consequatur.</p>    
+        </div>
+        </li>
+
+        <li class="hideOnMobile"><a href="#" onclick="toggle_5()">FAQ</a>
+        <div id="faq">
+             <p><h3>FAQ (Frequently Asked Questions)</h3>
+<h5>1. How does the image search feature work?</h5>
+
+The image search feature allows you to find images based on keywords. Simply enter a keyword related to the type of image you're looking for in the search bar and click the 'Search' button. The app will then fetch and display images related to your keyword from an external image database.
+<h5>2. Can I search for multiple keywords at once?</h5>
+
+Currently, the app supports searching for images based on a single keyword at a time. However, you can refine your search by entering more specific keywords.
+<h5>3. Are the images displayed in the app free to use?</h5>
+
+The images displayed in the app are sourced from external image databases such as Unsplash, which provide high-quality images that are often free to use for personal and commercial purposes. However, it's recommended to check the usage rights and licensing information for each image before using it for your specific purpose.
+<h5>4. How frequently is the image database updated?</h5>
+
+The image database is updated regularly by the external service provider. However, the frequency of updates may vary, and new images may be added to the database on a continuous basis.
+<h5>5. Can I save or download the images I find using the app?</h5>
+
+Yes, you can save or download the images displayed in the app to your device. Simply click on the image to view it in full size, and then use the download option provided by your browser or the external image hosting service.
+<h5>6. Is there a limit to the number of searches I can perform?</h5>
+
+There is no limit to the number of searches you can perform using the app. You can search for images as many times as you like, using different keywords each time.
+<h5>7. Can I provide feedback or report issues with the app?</h5>
+
+Yes, we welcome feedback from users to help improve the app. If you encounter any issues or have suggestions for new features, please feel free to contact us through the provided contact form or email address. Your feedback is valuable to us!</p>
+        </div>
+        </li>
+        <!-- <li class="menu-button" onclick="showSidebar()"><a href="#"> 
         <i class="bx bx-menu"></i>
-        </a></li>
+        </a></li> -->
     </ul>
 </nav>
 
-
-    
-    <div class="main-content">
-        <div class="container">
-            <h1>Image Search App</h1>
-        </div>
+<div class="main-content">
+    <div class="container">
+        <h1>Image Search App</h1>
     </div>
+</div>
 
-    <form>
-        <input type="text" id="search-input" placeholder="Enter Name of Images">
-        <button id="search-btn">Search</button>
-      
-    </form>
-    
-    <div class="search_results">
-        <div class="images">
-            <img src="https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGZvcmVzdHxlbnwwfHwwfHx8MA%3D%3D" alt="Forest">
-            <a href="https://unsplash.com/photos/empty-concrete-road-covered-surrounded-by-tall-tress-with-sun-rays-3Kv48NS4WUU" target="_blank" rel="noopener noreferrer">A road in the forest</a>
-        </div>
-        <div class="images">
-            <img src="https://images.unsplash.com/photo-1604272451012-c1928e953064?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hpY2tlbnN8ZW58MHx8MHx8fDA%3D">
-            <a href="https://unsplash.com/s/photos/chickens">Chickens</a>
-        </div>
-        <div class="images">
-            <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?q=80&w=2059&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Forest">
-            <a href="https://unsplash.com/photos/adult-lion-walking-beside-tree-ZxNKxnR32Ng" target="_blank" rel="noopener noreferrer">Lion</a>
-        </div>
+<form>
+    <input type="text" id="search-input" placeholder="Enter Name of Images">
+    <button id="search-btn">Search</button>
+</form>
+
+<div class="search_results">
+    <div class="images">
+        <img src="https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGZvcmVzdHxlbnwwfHwwfHx8MA%3D%3D" alt="Forest">
+        <a href="https://unsplash.com/photos/empty-concrete-road-covered-surrounded-by-tall-tress-with-sun-rays-3Kv48NS4WUU" target="_blank" rel="noopener noreferrer">A road in the forest</a>
     </div>
-    <button id="more">More Pictures</button>
-</body>
+    <div class="images">
+        <img src="https://images.unsplash.com/photo-1604272451012-c1928e953064?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hpY2tlbnN8ZW58MHx8MHx8fDA%3D">
+        <a href="https://unsplash.com/s/photos/chickens">Chickens</a>
+    </div>
+    <div class="images">
+        <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?q=80&w=2059&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Forest">
+        <a href="https://unsplash.com/photos/adult-lion-walking-beside-tree-ZxNKxnR32Ng" target="_blank" rel="noopener noreferrer">Lion</a>
+    </div>
+</div>
+<button id="more">More Pictures</button>
+
 <script src="index.js"></script>
+</body>
 </html>
