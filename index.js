@@ -1,11 +1,18 @@
 const key = "8JJAn6LU9ugN7o2QT0K2CPaJfhWGxLi7zkjwY1irJiI";
 
+// Add elements from HTML
 const formEl = document.querySelector("form")
 const searchInputEl = document.getElementById("search-input");
 const searchResultsEl = document.querySelector(".search_results");
 const moreButtonEl = document.getElementById("more");
 
 
+
+// Add event listener
+formEl.addEventListener("submit", (event) => {
+    event.preventDefault();
+   searchImages()
+})
 
 
 
