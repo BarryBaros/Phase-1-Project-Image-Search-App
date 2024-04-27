@@ -32,13 +32,19 @@ async function searchImages() {
         const imageLink = document.createElement("a")
         imageLink.href = result.links.innerHTML
         imageLink.target = "_blank"
-        imageLink.textContent = result
-        console.log(results)        
+        imageLink.textContent = result.alt_description
+
+        // Append Image and links
+        imageWrapper.appendChild(image);
+        imageWrapper.appendChild(imageLink);
+        searchResultsEl.appendChild(imageWrapper)
     })
+      
     
+    page++
     
     if (page > 1) {
-        moreButtonEl.style.display = block;
+        moreButtonEl.style.display = "block";
     }
 }
 
@@ -114,6 +120,4 @@ function toggle_3() {
       faqButton_1.style.display = "none";
     }
 }
-
-
 
