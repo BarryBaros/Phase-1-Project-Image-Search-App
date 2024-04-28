@@ -71,14 +71,14 @@ document.addEventListener("DOMContentLoaded", (e) => {
   const homeLink = document.querySelector('a[href="#home"]');
   const aboutLink = document.querySelector('a[href="#about"]');
   const faqLink = document.querySelector('a[href="#faq"]');
-  const homeSection = document.querySelector('home');
-  const aboutSection = document.querySelector('about');
-  const faqSection = document.querySelector('faq');
+  const homeSection = document.querySelector('#home');
+  const aboutSection = document.querySelector('#about');
+  const faqSection = document.querySelector('#faq');
 
   // Hide all sections
   homeSection.style.display = 'none';
   aboutSection.style.display = "none";
-  faqSectio.style.display = "none";
+  faqSection.style.display = 'none';
 
   // Function to toggle section Visibility
   function toggleSection(section) {
@@ -108,3 +108,16 @@ faqLink.addEventListener('click', function (event) {
   toggleSection(faqSection);
 });
 
+
+// Add Event listeners for hide buttons
+document.getElementById('hide-home').addEventListener('click', function () {
+  homeSection.style.display = 'none';
+});
+
+document.getElementById('hide-about').addEventListener('click', function () {
+  aboutSection.style.display = 'none';
+});
+
+document.getElementById('hide-faq').addEventListener('click', function () {
+  faqSection.style.display = 'none';
+});
