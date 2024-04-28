@@ -89,3 +89,22 @@ document.addEventListener("DOMContentLoaded", (e) => {
     }
   }
 
+// Add Event listeners for navigation links
+homeLink.addEventListener('click', function (event) {
+  event.preventDefault();
+  console.log('Home link clicked');
+  toggleSection(homeSection);
+});
+
+aboutLink.addEventListener('click', function (event) {
+  event.preventDefault();
+  console.log('About link clicked');
+  toggleSection(aboutSection);
+});
+
+faqLink.addEventListener('click', function (event) {
+  event.preventDefault();
+  console.log('FAQ link clicked');
+  toggleSection(faqSection);
+});
+
