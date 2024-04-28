@@ -7,10 +7,22 @@
   font-family: "Poppins", sans-serif;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  padding: 5px 50px;
+  margin-top: -20px;
+  background: beige;
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 100%;
+}
 
 
 body {
-  background-color:floralwhite ;
+  background-color: floralwhite;
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
   margin: 0;
@@ -21,14 +33,59 @@ body {
 }
 
 
+nav a {
+  font-size: 30px;
+  color: maroon;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 50px;
+  transition: 0.5s;
+}
+
+a:hover {
+  background-color: maroon;
+  color: beige;
+}
+
+
+.heading{
+   color: maroon;
+  font-size: 40px;
+  text-align: center;
+  padding: 60px;
+}
+
+section  {
+  min-height: 10vh;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+#handles{
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+}
+
+p, h5{
+ margin: 20px;
+ color: maroon;
+}
+
 
 h1 {
   color: maroon;
-  font-size: 36px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 150px;
+  font-size: 20px;
+  text-align: flex-start;
+  margin: 10px;
   margin-bottom: 50px;
+}
+
+.home{
+  margin-top: -100px;
 }
 
 form {
@@ -39,20 +96,22 @@ form {
 }
 
 #search-input {
-  width: 60%;
+  width: 100%;
   max-width: 400px;
+  margin-top: 60px;
   padding: 10px 20px;
   border: none;
   box-shadow: 0 5px 5px maroon;
   border-radius: 5px;
   font-size: 18px;
   color: black;
-  background-color: floralwhite;
+  background-color: white;
 }
 
 #search-btn {
+  margin-top: 60px;
   padding: 10px 20px;
-  background-color: maroon; 
+  background-color: maroon;
   color: white;
   border: none;
   font-size: 18px;
@@ -63,7 +122,7 @@ form {
 }
 
 #search-btn:hover {
-  background-color:beige;
+  background-color: beige;
   color: maroon;
 }
 
@@ -97,20 +156,18 @@ form {
   transform: scale(1.05);
 }
 
-
 .images a {
   padding: 10px;
   display: block;
   color: maroon;
   text-decoration: none;
-  transition: background-color .5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
 
-.images:hover a{
+.images:hover a {
   background-color: maroon;
   color: beige;
 }
-
 
 #more {
   background-color: maroon;
@@ -121,31 +178,37 @@ form {
   margin: 20px auto;
   text-align: center;
   display: block;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
 }
 
-#more:hover{
+/* .handles{
+ margin-left: 20px;
+ font-size: 18px;
+ color: maroon;
+ justify-content: center;
+} */
+
+#more:hover {
   background-color: beige;
   color: maroon;
 }
 
-
 @media screen and (max-width: 768px) {
-  .images{
+  .images {
     width: 45%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .images{
+  .images {
     width: 100%;
   }
 
-  form{
+  form {
     flex-direction: column;
   }
-  #search-input{
+  #search-input {
     margin-bottom: 20px;
     width: 85%;
   }
