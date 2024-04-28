@@ -53,6 +53,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
     }
   }
 
+
   // Add event listeners
   formEl.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -64,3 +65,27 @@ document.addEventListener("DOMContentLoaded", (e) => {
     searchImages();
   });
 });
+
+
+
+  const homeLink = document.querySelector('a[href="#home"]');
+  const aboutLink = document.querySelector('a[href="#about"]');
+  const faqLink = document.querySelector('a[href="#faq"]');
+  const homeSection = document.querySelector('home');
+  const aboutSection = document.querySelector('about');
+  const faqSection = document.querySelector('faq');
+
+  // Hide all sections
+  homeSection.style.display = 'none';
+  aboutSection.style.display = "none";
+  faqSectio.style.display = "none";
+
+  // Function to toggle section Visibility
+  function toggleSection(section) {
+    if (section.style.display === 'none') {
+      section.style.display = 'block';
+    } else {
+      section.style.display = 'none';
+    }
+  }
+

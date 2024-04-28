@@ -10,13 +10,15 @@
 header {
   position: fixed;
   width: 100%;
-  padding: 5px 50px;
+  padding: 10px 0;
   margin-top: -20px;
   background: beige;
   display: flex;
-  /* justify-content: space-between; */
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
+   border: none;
+  box-shadow: 0 5px 5px maroon;
+  border-radius: 5px;
   z-index: 100%;
 }
 
@@ -31,7 +33,6 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-
 
 nav a {
   font-size: 30px;
@@ -68,7 +69,14 @@ section  {
   display: flex;
   flex-direction: column;
   padding: 100px;
+  color: maroon;
 }
+
+#handles footer a{
+margin-right: 20px;
+}
+
+
 
 p, h5{
  margin: 20px;
@@ -182,12 +190,6 @@ form {
   transition: background-color 0.3s ease-in-out;
 }
 
-/* .handles{
- margin-left: 20px;
- font-size: 18px;
- color: maroon;
- justify-content: center;
-} */
 
 #more:hover {
   background-color: beige;
