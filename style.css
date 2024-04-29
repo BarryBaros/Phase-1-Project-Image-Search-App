@@ -53,7 +53,8 @@ a:hover {
    color: maroon;
   font-size: 40px;
   text-align: center;
-  padding: 60px;
+  padding: 100px 0;
+  margin-bottom: 10px;
 }
 
 section  {
@@ -62,7 +63,7 @@ section  {
     align-items: center;
     background-color: aliceblue;
     font-size: 18px;
-    margin-top: 40px;
+    margin-top: 0px;
 }
 
 #handles{
@@ -92,9 +93,11 @@ h1 {
   margin-bottom: 50px;
 }
 
-.home{
+.home {
   margin-top: -100px;
 }
+
+
 
 form {
   display: flex;
