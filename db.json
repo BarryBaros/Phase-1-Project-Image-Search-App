@@ -1,0 +1,60 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "name": "Dogs",
+      "url": "https://unsplash.com/s/photos/dogs"
+    },
+    {
+      "id": 2,
+      "name": "Cats",
+      "url": "https://unsplash.com/s/photos/cats"
+    },
+    {
+      "id": 3,
+      "name": "Dogs",
+      "url": "https://unsplash.com/s/photos/rivers"
+    },
+    {
+      "id": 4,
+      "name": "Mountains",
+      "url": "https://unsplash.com/s/photos/mountains"
+    },
+
+    {
+      "id": 5,
+      "name": "Nature",
+      "url": "https://unsplash.com/s/photos/nature"
+    },
+
+    {
+      "id": 6,
+      "name": "Humans",
+      "url": "https://unsplash.com/s/photos/humans"
+    },
+
+    {
+      "id": 7,
+      "name": "Rabits",
+      "url": "https://unsplash.com/s/photos/rabits"
+    },
+
+    {
+      "id": 8,
+      "name": "Cities",
+      "url": "https://unsplash.com/s/photos/cities"
+    },
+
+    {
+      "id": 9,
+      "name": "Birds",
+      "url": "https://unsplash.com/s/photos/birds"
+    },
+
+    {
+      "id": 10,
+      "name": "Penguins",
+      "url": "https://unsplash.com/s/photos/penguins"
+    }
+  ]
+}

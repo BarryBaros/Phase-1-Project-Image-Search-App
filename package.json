@@ -1,7 +1,7 @@
 {
   "name": "phase-1-project-image-search-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "Image Search App This repository contains a web application that allows users to search for images by entering keywords. The images are then generated using the Unsplash API.  This app is built using HTML, CSS, and JavaScript, and it provides a user-friendly interface to search for and view images from the Unsplash database. The app also has a short introduction in the home, some more information in the about and some of the more frequently asked questions.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "json-server": "^1.0.0-alpha.23"
   }
 }
