@@ -19,4 +19,5 @@ Click on the predefined categories to quickly search for specific types of image
 
 const accessKey = "xJ-n7yenAk63AMjZOSo4wxY_O8uEYLmnHsLUz30_UCM";
 
-![HOME PAGE](https://github.com/BarryBaros/Phase-1-Project-Image-Search-App/assets/122816138/ed05e997-6838-47eb-abb0-0600e98932b6)
+
+![Image Search App (2)](https://github.com/BarryBaros/Phase-1-Project-Image-Search-App/assets/122816138/f560035a-551f-42df-b093-3c506435deab)
